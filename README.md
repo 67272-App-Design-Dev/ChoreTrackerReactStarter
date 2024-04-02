@@ -484,7 +484,7 @@ Add these routes to `routes.rb` and then create the controller actions and seria
    }
    ```
 
-1. Of course, this relies on a function `onCreateChore()` that we don't have. Indeed, this is going to come as a prop from the parent component; we can add that in at the top with the following edit: `function ChoreEditor({ onCreateChore }) {`. With that, this component is complete, but we need to adjust the parent component to send along the right prop.
+1. Of course, this relies on a function `onCreateChore()` that we don't have. Indeed, this is going to come as a prop from the parent component; we can add that in at the top with the following edit: `function ChoreEditor({ onCreateChore }) { ...`. With that, this component is complete, but we need to adjust the parent component to send along the right prop.
 
 1. In the parent component, let's edit the display of the editor to provide this prop to the `ChoreEditor` component with the following:
 
